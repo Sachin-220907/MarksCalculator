@@ -1,44 +1,40 @@
+import { Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Calculator from './pages/calculator';
+import Results from './pages/Result';
+
+import './App.css';
+import './styles/Navbar.css';
+import './styles/Component.css';
+import './styles/Home.css';
+import './styles/Calculator.css';
+import './styles/Results.css';
+
 function App() {
 
     return (
-        <div className="container">
+        <div className="app">
 
-            <h1>Student Marks Calculator</h1>
+            <Navbar />
 
-            <form>
+            <main className="main-content">
 
-                <label>Student Name</label>
-                <input type="text" placeholder="Enter the name" />
+                <Routes>
 
-                <label>Register Number</label>
-                <input type="text" placeholder="Enter your roll number" />
+                    <Route path="/" element={<Home />} />
 
-                <h3>Enter Subject Marks</h3>
+                    <Route path="/calculator" element={<Calculator />} />
 
-                <label>Sub 1</label>
-                <input type="number" placeholder="Enter the marks" />
+                    <Route path="/results" element={<Results />} />
 
-                <label>Sub 2</label>
-                <input type="number" placeholder="Enter the marks" />
+                </Routes>
 
-                <label>Sub 3</label>
-                <input type="number" placeholder="Enter the marks" />
-
-                <label>Sub 4</label>
-                <input type="number" placeholder="Enter the marks" />
-
-                <label>Sub 5</label>
-                <input type="number" placeholder="Enter the marks" />
-
-                <button type="button">Calculate</button>
-
-                <button type="reset">Reset</button>
-
-            </form>
+            </main>
 
         </div>
     );
-
 }
 
 export default App;

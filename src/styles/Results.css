@@ -1,0 +1,44 @@
+.results-page {
+    min-height: calc(100vh - 65px);
+    padding: 40px 20px;
+    background-color: #f4f7fc;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.results-page h1 {
+    color: #101828;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.results-page .result-card {
+    text-align: left;
+}
+
+.results-page .result-card h2 {
+    color: #101828;
+    margin-bottom: 20px;
+}
+
+.results-page .result-card h3 {
+    color: #0866e9;
+}
+
+.results-page .result-card p {
+    color: #475569;
+}
+
+.no-results {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.no-results p {
+    color: #475569;
+    margin-bottom: 25px;
+}
