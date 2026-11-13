@@ -1,0 +1,135 @@
+.btn {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #0866e9;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #004fbd;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #101828;
+    border: 1px solid #aab7ca;
+}
+
+.btn-secondary:hover {
+    background-color: #edf3fc;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    min-width: 0;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #172033;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #0866e9;
+    box-shadow: 0 0 0 3px rgba(8, 102, 233, 0.12);
+}
+
+.student-form {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.student-form h2 {
+    color: #101828;
+    margin-bottom: 20px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.result-card {
+    width: 100%;
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.result-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.result-summary div {
+    background-color: #edf4ff;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result-summary h4 {
+    margin: 0 0 10px;
+    color: #475569;
+}
+
+.result-summary p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0866e9;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .student-form {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .result-summary {
+        grid-template-columns: 1fr;
+    }
+}
