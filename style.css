@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(68, 68, 173);
+    border-radius: 10px;
+    color: rgb(230, 170, 60);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: rgb(230, 170, 60);
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculate {
+    background-color: #2563eb;
+    color: white;
+}
+
+#calculate:hover {
+    background-color: orange;
+}
+
+button[type="reset"] {
+    background-color:whitesmoke;
+    color: blue;
+    margin-left: 10px;
+}
+
+#result {
+    width: 450px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: rgb(222, 216, 216);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+    color: #1e3a8a;
+}
+
+#result p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.pass {
+    color: rgb(33, 163, 33);
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-style: italic;
+}
+
+
